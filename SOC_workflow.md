@@ -30,4 +30,4 @@ Correlation is the process of linking multiple normalized events across systems 
 <u>***For example:***</u>  
 * A first even says that user A log in (in this case, it marked as normal action)  
 * Then the following even says that this user run a malware in his computer  
-⇒ As a result we all know this is not just a logon but a actual attack from hacker ^^
+⇒ As a result we all know this is not just a logon but an actual attack from hacker ^^
