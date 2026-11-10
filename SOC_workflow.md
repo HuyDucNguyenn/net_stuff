@@ -44,4 +44,4 @@ Correlation is the process of linking multiple normalized events across systems 
 - Incident Response: Containment, eradication, and evidence preservation actions are executed
 - Recovery & Reporting: Systems are restored, reports are filed, and lessons are used to improve defenses
 
-By the way, I hope this is interesting enough to trigger your curiosity to click ⇒ SOC_tools.md 😁😁😁
+By the way, I hope this is interesting enough to trigger your curiosity to click ⇒ ***[(SOC_tools.md)](./SOC_tools.md)***  😁😁😁
