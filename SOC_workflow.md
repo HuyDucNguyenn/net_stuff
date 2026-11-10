@@ -5,7 +5,7 @@ Before talking about some flamboyant details, I genuinely believe that we should
 
 ***The very first question is that where we got the data ?***   
 
-## 1. DATA COLLECTION  
+## 1. Data Collection  
 This is just simply a process that we collect raw data from various sources across an organization’s IT environment
 
 | Source Type | Machines | Info Provided |
@@ -30,4 +30,18 @@ Correlation is the process of linking multiple normalized events across systems 
 <u>***For example:***</u>  
 * A first even says that user A log in (in this case, it marked as normal action)  
 * Then the following even says that this user run a malware in his computer  
-⇒ As a result we all know this is not just a logon but an actual attack from hacker ^^
+⇒ As a result we all know this is not just a logon but an actual attack from hacker ^^  
+
+## 3. Alert Triage
+> Let's see a case as a prime instance to see what tier 1    analyst will do ^^  
+- As covered, alerts can come from many sources like endpoint. The thing is that we cannot identify whether they are true or false positive cases as the system just follow the rules that we set at first and let some 'weird' things go through !!! It turns out that there's still some positions for tier 1 analysts as they have to check all the cases to prevent there is no false positive cases from slipping through the cracks  
+- Additionally, tier 1 have to give a verdict to each alert (decide escalation to higher level if needed)
+- Finally, close alert if benign or trigger containment if confirmed
+
+> So now just take a look to see the while picter after then =)))
+
+- Incident Investigation: Tier 2/3 analysts perform deep dives using threat intel, MITRE, and forensic tools 
+- Incident Response: Containment, eradication, and evidence preservation actions are executed
+- Recovery & Reporting: Systems are restored, reports are filed, and lessons are used to improve defenses
+
+By the way, I hope this is interesting enough to trigger your curiosity to click ⇒ SOC_tools.md 😁😁😁
