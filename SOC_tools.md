@@ -39,3 +39,51 @@ The thing is that what is a basic difference between them ? Actully I also have 
 ![stuff](assets/ips_ids.png)
 As picture demonstrates, IPS will block any suspicious traffic following its policy. If a package bypasses (allowed IP source/destinaton or port), it's not a totally safe package which we need to monitor it  
 <u>***For example:***</u> package with port 2006 is marked as normal but attacker use it to disguise normal activity bypassing firewall and IPS rule. This is where IDS comes in as it will continue to monitor and trigger alerts if needed 
+
+## 6. EDR (Endpoint Detection and Response)
+> Monitors and responds to suspicious endpoint activity with real-time detection, isolation, and forensics  
+
+Let's make the comparison to see what main differences antiVirus
+| Feature | Traditional Antivirus (AV) | Endpoint Detection & Response (EDR) |
+| :--- | :--- | :--- |
+| **Primary Function** | Detect and block known malware | Detect, investigate, and respond to advanced endpoint threats |
+| **Detection Method** | Signature-based (known threats) | Behavioral analysis + machine learning + IOC correlation |
+| **Visibility** | Limited to file-based malware | Full endpoint visibility (processes, memory, registry, network) |
+| **Response Capability** | Quarantine or delete infected files | Isolate endpoint, kill process, collect forensics, rollback changes |
+| **Threat Types Covered** | Mostly known viruses, trojans | Advanced threats: fileless malware, ransomware, lateral movement |
+| **Incident Investigation** | Not built-in | Built-in investigation tools (e.g., timeline, process tree) |
+| **Automation/Integration** | Usually standalone | Integrates with SIEM/SOAR, supports automated response |
+| **Use Case** | Basic endpoint protection | Advanced threat detection and IR in SOC environments |
+## 7.Vulnerability Assessment Tools
+> Scan systems and applications to identify known security weaknesses before attackers can exploit them  
+
+Basically these tools help us identify vulnerabilities real quick
+<u>***For example:***</u> scanning for open port or XSS flaws, etc... 😁
+## 8.Ticketing Tools
+> Track, assign, document, and escalate security incidents throughout their lifecycle  
+
+ | Tool | Use Case / Notes |
+| :--- | :--- |
+| **ServiceNow** | Most common in enterprises, customizable workflows, integrates with SOAR/SIEM |
+| **JIRA (Atlassian)** | Widely used for IT/security tasks, often used with Agile teams |
+| **RT (Request Tracker)** | Lightweight, open-source alternative |
+| **Zendesk** | Sometimes used in smaller orgs for support-style incidents |
+| **TheHive** | Purpose-built for SOC/IR ticketing with native case management & observables |
+| **Freshservice** | Used in some managed SOCs or MSSPs |
+
+## 9.Sandboxing Tools
+> Safely execute suspicious files or links in isolated environments to observe malicious behavior  
+
+This is like a tool that help us analyze malware safely. Perharps I will use it later 🐱🐱🐱
+## 10. UEBA (User and Entity Behavior Analytics)
+> Detects insider threats and compromised accounts by identifying deviations from normal user behavior
+## 11. Deception Tools
+> Deploy fake assets like honeypots and tokens to trick attackers and detect intrusions early.
+
+
+| Term | What It Is | Purpose |
+| :--- | :--- | :--- |
+| **Honeypot** | A **decoy system or service** that mimics a real asset (e.g., web server, SSH server) | Lure attackers and study their behavior |
+| **Honeynet** | A **network of honeypots** designed to appear as a real enterprise network | Study large-scale attack campaigns and lateral movement |
+| **Honeymap** | A **visual map** of honeypot activity around the world (real-time) | Visualize attacks by source IP, country, method |
+| **Honeytoken** | A **fake piece of data** (like a document or API key) that alerts you when touched | Lightweight tripwire (used in canarytokens) |
