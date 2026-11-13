@@ -6,7 +6,7 @@ Before talking about some flamboyant details, I genuinely believe that we should
 ***The very first question is that where we got the data ?***   
 
 ## 1. Data Collection  
-This is just simply a process that we collect raw data from various sources across an organization’s IT environment
+> This is just simply a process that we collect raw data from various sources across an organization’s IT environment
 
 | Source Type | Machines | Info Provided |
 | :--- | :--- | :--- |
